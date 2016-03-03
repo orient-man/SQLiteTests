@@ -1,3 +1,5 @@
+framework: net451
 source https://www.nuget.org/api/v2
 
 nuget NUnit
+nuget System.Data.SQLite.Core

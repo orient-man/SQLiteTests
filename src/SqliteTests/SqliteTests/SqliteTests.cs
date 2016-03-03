@@ -1,4 +1,5 @@
-﻿using NUnit.Framework;
+﻿using System.Data.SQLite;
+using NUnit.Framework;
 
 namespace SqliteTests
 {
@@ -9,6 +10,8 @@ namespace SqliteTests
         public void ShouldDoTheRightThing()
         {
             // arrange
+            var conn = new SQLiteConnection("Data Source=:memory:;Version=3;New=True;");
+
 
             // act
             // assert
